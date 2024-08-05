@@ -7,7 +7,7 @@ import ErrorHandler from "../utils/errorHandler.js"
 import cloudinary from "cloudinary"
 
 export const getAllCourses=catchAsyncError(
-    
+
   async (req,res,next)=>{
         // res.send("working")
   const keyword=req.query.keyword ||""
@@ -21,7 +21,7 @@ export const getAllCourses=catchAsyncError(
               $options:"i"
             },
             category:{
-               $regex:keyword,
+               $regex:category,
               $options:"i"
             }
           }
