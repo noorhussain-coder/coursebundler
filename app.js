@@ -37,11 +37,14 @@ app.use("/api/v1/",user)
 // app.use("/api/v1/",payment)
 app.use("/api/v1/",others)
 
-export default app
-app.use(ErrorMiddleware)
 
+export default app
 app.get("/",(req,res)=>{
-   res.send(`<h1>site is working href=${process.env.FRONTEND_URL} to vist frontend </h1>`)
+   res.send(`<h1>site is working  click 
+  <a href=${process.env.FRONTEND_URL} > here</a>
+      to vist frontend </h1>`)
 })
+
+app.use(ErrorMiddleware)
 
 
