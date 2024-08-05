@@ -1,4 +1,4 @@
-import Razorpay from "razorpay";
+// import Razorpay from "razorpay";
 import app from "./app.js";
 import { connectDB } from "./config/database.js";
 import cloudinary from "cloudinary"
@@ -12,10 +12,10 @@ cloudinary.v2.config({
     api_secret:process.env.CLOUDINARY_CLIENT_SECRET
 
 })
-export const  instance=new  Razorpay({
-    key_id:process.env.RAZORPAY_API_KEY,
-    key_secret:process.env.RAZORPAY_API_SECRE
-})
+// export const  instance=new  Razorpay({
+//     key_id:process.env.RAZORPAY_API_KEY,
+//     key_secret:process.env.RAZORPAY_API_SECRE
+// })
 
 // NodeCron.schedule("* * * * * *") moth year hour minute second
 // very moth this function will run call
